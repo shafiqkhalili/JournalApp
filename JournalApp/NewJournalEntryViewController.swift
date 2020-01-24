@@ -13,6 +13,8 @@ class NewJournalEntryViewController: UIViewController {
     @IBOutlet weak var journalEntryText: UITextView!
     
     var entry = JournalEntry(content: "")
+    var journal : Journal?
+    var journalVC : JournalTableViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,9 +26,14 @@ class NewJournalEntryViewController: UIViewController {
     @IBAction func save(_ sender: UIBarButtonItem) {
        
         entry.content = journalEntryText.text
+        journal?.add(entry: entry)
+        journalVC?.refresh()
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

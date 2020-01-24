@@ -11,6 +11,7 @@ import UIKit
 class JournalTableViewController: UITableViewController {
     let cellIdentity = "JournalEntryCell"
     let journalEntrySegueId = "showJournalEntry"
+    let newEntrySegueId = "createJournalEntry"
     
     //var journalEntries = [JournalEntry]()
     let journal = Journal()
@@ -28,7 +29,7 @@ class JournalTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    
+ 
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -89,7 +90,9 @@ class JournalTableViewController: UITableViewController {
      return true
      }
      */
-    
+    func refresh(){
+         tableView.reloadData()
+    }
     
     // MARK: - Navigation
     
@@ -116,6 +119,8 @@ class JournalTableViewController: UITableViewController {
         //                destinationVc.journalEntry = entry
         //            }
         //        }
+        print("Journal count \(journal.count)")
+        
         if segue.identifier == journalEntrySegueId{
             guard let destinationVc = segue.destination as? JournalEntryViewController else {return}
             guard let cell = sender as? UITableViewCell else{return}
@@ -123,6 +128,12 @@ class JournalTableViewController: UITableViewController {
             guard let entry = journal.entry(index: indexPath.row) else {return}
             
             destinationVc.journalEntry = entry
+            
+        }else if segue.identifier == newEntrySegueId {
+            guard let destinationVc = segue.destination as? NewJournalEntryViewController else {return}
+            
+            destinationVc.journal = journal
+            destinationVc.journalVC = self
         }
     }
 }
