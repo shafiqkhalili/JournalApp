@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E23C529523DAE2B7003CAB48 /* NewJournalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23C529423DAE2B7003CAB48 /* NewJournalEntryViewController.swift */; };
 		E2FB545E23D98DF30046B399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FB545D23D98DF30046B399 /* AppDelegate.swift */; };
 		E2FB546023D98DF30046B399 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FB545F23D98DF30046B399 /* SceneDelegate.swift */; };
-		E2FB546223D98DF30046B399 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FB546123D98DF30046B399 /* ViewController.swift */; };
 		E2FB546523D98DF30046B399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2FB546323D98DF30046B399 /* Main.storyboard */; };
 		E2FB546723D98DF30046B399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2FB546623D98DF30046B399 /* Assets.xcassets */; };
 		E2FB546A23D98DF30046B399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2FB546823D98DF30046B399 /* LaunchScreen.storyboard */; };
+		E2FB547223D98F4B0046B399 /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FB547123D98F4B0046B399 /* JournalTableViewController.swift */; };
+		E2FB547423D993A00046B399 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FB547323D993A00046B399 /* JournalEntry.swift */; };
+		E2FB547623D99CA10046B399 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FB547523D99CA10046B399 /* Journal.swift */; };
+		E2FB547823D9AB220046B399 /* JournalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FB547723D9AB220046B399 /* JournalEntryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E23C529423DAE2B7003CAB48 /* NewJournalEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJournalEntryViewController.swift; sourceTree = "<group>"; };
 		E2FB545A23D98DF30046B399 /* JournalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FB545D23D98DF30046B399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2FB545F23D98DF30046B399 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E2FB546123D98DF30046B399 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2FB546423D98DF30046B399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2FB546623D98DF30046B399 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2FB546923D98DF30046B399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2FB546B23D98DF30046B399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2FB547123D98F4B0046B399 /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; };
+		E2FB547323D993A00046B399 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		E2FB547523D99CA10046B399 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		E2FB547723D9AB220046B399 /* JournalEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,15 @@
 			children = (
 				E2FB545D23D98DF30046B399 /* AppDelegate.swift */,
 				E2FB545F23D98DF30046B399 /* SceneDelegate.swift */,
-				E2FB546123D98DF30046B399 /* ViewController.swift */,
 				E2FB546323D98DF30046B399 /* Main.storyboard */,
 				E2FB546623D98DF30046B399 /* Assets.xcassets */,
 				E2FB546823D98DF30046B399 /* LaunchScreen.storyboard */,
 				E2FB546B23D98DF30046B399 /* Info.plist */,
+				E2FB547123D98F4B0046B399 /* JournalTableViewController.swift */,
+				E2FB547323D993A00046B399 /* JournalEntry.swift */,
+				E2FB547523D99CA10046B399 /* Journal.swift */,
+				E2FB547723D9AB220046B399 /* JournalEntryViewController.swift */,
+				E23C529423DAE2B7003CAB48 /* NewJournalEntryViewController.swift */,
 			);
 			path = JournalApp;
 			sourceTree = "<group>";
@@ -138,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2FB546223D98DF30046B399 /* ViewController.swift in Sources */,
 				E2FB545E23D98DF30046B399 /* AppDelegate.swift in Sources */,
+				E2FB547623D99CA10046B399 /* Journal.swift in Sources */,
+				E2FB547823D9AB220046B399 /* JournalEntryViewController.swift in Sources */,
+				E2FB547223D98F4B0046B399 /* JournalTableViewController.swift in Sources */,
+				E2FB547423D993A00046B399 /* JournalEntry.swift in Sources */,
+				E23C529523DAE2B7003CAB48 /* NewJournalEntryViewController.swift in Sources */,
 				E2FB546023D98DF30046B399 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 929AVN2CVW;
 				INFOPLIST_FILE = JournalApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 929AVN2CVW;
 				INFOPLIST_FILE = JournalApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
